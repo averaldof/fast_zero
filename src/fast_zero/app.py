@@ -7,6 +7,6 @@ from fast_zero.schemas import Message
 app = FastAPI()
 
 
-@app.get("/", HTTPStatus.OK, response_model=Message)
+@app.get("/", status_code=HTTPStatus.OK, response_model=Message)
 def read_root():
     return {"message": "Olá mundo"}

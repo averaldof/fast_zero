@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from app import app
+from fast_zero.app import app
 
 # client = TestClient(app) #todo test precisa de cliente
 

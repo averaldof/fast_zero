@@ -40,7 +40,7 @@ dev = [
 ]
 
 [tool.taskipy.tasks]
-run = 'fastapi dev app.py'
+run = 'export PYTHONPATH=$PYTHONPATH:./src && fastapi dev src/fast_zero/app.py'
 
 pre_test = 'task lint'
 test = 'poetry run pytest --cov=. --cov-report=term-missing -vv'
